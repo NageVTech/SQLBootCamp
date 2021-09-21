@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS Users;
 DROP TABLE IF EXISTS Supplies;
 CREATE TABLE Taverns (
 ID INT IDENTITY,
-TavernName VARCHAR(100)
+TavernName VARCHAR(50)
 );
 
 INSERT INTO Taverns (TavernName) VALUES
@@ -19,7 +19,7 @@ INSERT INTO Taverns (TavernName) VALUES
 
 CREATE TABLE Locations (
 ID INT IDENTITY,
-LocationName VARCHAR(100),
+LocationName VARCHAR(50),
 );
 
 INSERT INTO Locations (LocationName, TavernID, Floors) VALUES
@@ -31,8 +31,8 @@ INSERT INTO Locations (LocationName, TavernID, Floors) VALUES
 
 CREATE TABLE UserRoles (
 ID INT IDENTITY,
-RoleName VARCHAR(100),
-RoleDescription VARCHAR(255)
+RoleName VARCHAR(50),
+RoleDescription VARCHAR(200)
 );
 INSERT INTO UserRoles (RoleName, RoleDescription) VALUES
 ('Owner','Collector of souls.'),
@@ -44,7 +44,7 @@ ID INT IDENTITY,
 UserName VARCHAR(50),
 RoleID INT,
 TavernID INT,
-Password VARCHAR(255)
+Password VARCHAR(50)
 );
 
 
