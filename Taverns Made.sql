@@ -22,7 +22,7 @@ ID INT IDENTITY,
 LocationName VARCHAR(50),
 );
 
-INSERT INTO Locations (LocationName, TavernID, Floors) VALUES
+INSERT INTO Locations (LocationName, ID, Floors) VALUES
 ('Brookwood', 1, 1),
 ('Prospect Point', 2, 2),
 ('Windsor Cresent', 2, 2),
